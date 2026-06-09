@@ -1,0 +1,20 @@
+import random
+
+class SmartAI:
+
+    def ask(self, msg):
+        if "سعر" in msg:
+            return "لدينا خطط تبدأ من 5$ شهرياً 🔥"
+
+        if "مساعدة" in msg:
+            return "يمكنك التواصل عبر البريد: nexora.ai.111@gmail.com"
+
+        return self.smart_reply(msg)
+
+    def smart_reply(self, msg):
+        replies = [
+            "هذا سؤال ممتاز 👌",
+            "دعني أفكر 🤔",
+            "تحليل ذكي جاري..."
+        ]
+        return random.choice(replies) + " → " + msg
