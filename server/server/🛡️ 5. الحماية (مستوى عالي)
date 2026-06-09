@@ -1,0 +1,6 @@
+from fastapi import HTTPException
+
+def firewall(ip):
+    banned = ["1.1.1.1"]
+    if ip in banned:
+        raise HTTPException(status_code=403, detail="Blocked")
