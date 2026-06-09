@@ -1,0 +1,9 @@
+my-app/
+├── app/
+│   ├── api/
+│   │   ├── ai/route.js
+│   │   └── checkout/route.js
+│   ├── page.js
+│   └── layout.js
+├── .env.local
+├── package.json
